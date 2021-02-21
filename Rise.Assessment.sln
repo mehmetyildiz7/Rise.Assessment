@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Web", "Rise.Assessment.Web\Rise.Assessment.Web.csproj", "{A66F5F4D-365D-4DD1-BA04-33844FD40476}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Web", "Rise.Assessment.Web\Rise.Assessment.Web.csproj", "{A66F5F4D-365D-4DD1-BA04-33844FD40476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Api", "Rise.Assessment.Api\Rise.Assessment.Api.csproj", "{06373C98-AF12-4201-9F41-EAA35F03F254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Api", "Rise.Assessment.Api\Rise.Assessment.Api.csproj", "{06373C98-AF12-4201-9F41-EAA35F03F254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Database", "Rise.Assessment.Database\Rise.Assessment.Database.csproj", "{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Database", "Rise.Assessment.Database\Rise.Assessment.Database.csproj", "{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Business", "Rise.Assessment.Business\Rise.Assessment.Business.csproj", "{68965369-41EC-4E7D-A5D4-287061846503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Business", "Rise.Assessment.Business\Rise.Assessment.Business.csproj", "{68965369-41EC-4E7D-A5D4-287061846503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Common", "Rise.Assessment.Common\Rise.Assessment.Common.csproj", "{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Common", "Rise.Assessment.Common\Rise.Assessment.Common.csproj", "{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Log4netDatabase", "Rise.Assessment.Log4netDatabase\Rise.Assessment.Log4netDatabase.csproj", "{B4EA3063-9E8A-4047-A515-44288A307B2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rise.Assessment.Log4netDatabase", "Rise.Assessment.Log4netDatabase\Rise.Assessment.Log4netDatabase.csproj", "{B4EA3063-9E8A-4047-A515-44288A307B2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.ReportWorker", "Rise.Assessment.ReportWorker\Rise.Assessment.ReportWorker.csproj", "{53003783-71BB-4893-ABD9-34818AC151DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53003783-71BB-4893-ABD9-34818AC151DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53003783-71BB-4893-ABD9-34818AC151DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53003783-71BB-4893-ABD9-34818AC151DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53003783-71BB-4893-ABD9-34818AC151DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
