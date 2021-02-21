@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Rise.Assessment.Database.Entities;
 
 namespace Rise.Assessment.Database
 {
@@ -17,6 +18,10 @@ namespace Rise.Assessment.Database
             Configuration = configuration;
         }
 
+        public virtual DbSet<ContactInfo> ContactInfos { get; set; }
+        public virtual DbSet<Person> Persons { get; set; }
+        public virtual DbSet<Report> Reports { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -24,7 +29,7 @@ namespace Rise.Assessment.Database
             {
                 optionsBuilder
                     .UseLazyLoadingProxies()
-                    .UseNpgsql(Configuration.GetConnectionString("BestLoan"));
+                    .UseNpgsql(Configuration.GetConnectionString("Rise"));
             }
         }
 
