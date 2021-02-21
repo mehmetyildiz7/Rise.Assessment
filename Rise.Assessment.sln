@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Web", "Rise.Assessment.Web\Rise.Assessment.Web.csproj", "{A66F5F4D-365D-4DD1-BA04-33844FD40476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Api", "Rise.Assessment.Api\Rise.Assessment.Api.csproj", "{06373C98-AF12-4201-9F41-EAA35F03F254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Database", "Rise.Assessment.Database\Rise.Assessment.Database.csproj", "{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Business", "Rise.Assessment.Business\Rise.Assessment.Business.csproj", "{68965369-41EC-4E7D-A5D4-287061846503}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Common", "Rise.Assessment.Common\Rise.Assessment.Common.csproj", "{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rise.Assessment.Log4netDatabase", "Rise.Assessment.Log4netDatabase\Rise.Assessment.Log4netDatabase.csproj", "{B4EA3063-9E8A-4047-A515-44288A307B2D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A66F5F4D-365D-4DD1-BA04-33844FD40476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A66F5F4D-365D-4DD1-BA04-33844FD40476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A66F5F4D-365D-4DD1-BA04-33844FD40476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A66F5F4D-365D-4DD1-BA04-33844FD40476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06373C98-AF12-4201-9F41-EAA35F03F254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06373C98-AF12-4201-9F41-EAA35F03F254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06373C98-AF12-4201-9F41-EAA35F03F254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06373C98-AF12-4201-9F41-EAA35F03F254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D363DFE9-AAA4-4AD6-899E-1CC4070F8CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68965369-41EC-4E7D-A5D4-287061846503}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68965369-41EC-4E7D-A5D4-287061846503}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68965369-41EC-4E7D-A5D4-287061846503}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68965369-41EC-4E7D-A5D4-287061846503}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC8BCFF6-98FA-4E35-A369-F2C73EC642DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EA3063-9E8A-4047-A515-44288A307B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76EE0C26-2E6B-4D1B-8A64-11B1A6AE6AFB}
+	EndGlobalSection
+EndGlobal
