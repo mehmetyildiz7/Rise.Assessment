@@ -32,20 +32,25 @@ namespace Rise.Assessment.Database.Repositories.Base
 
         public async Task<Entity> Add(Entity obj)
         {
+            obj.Id = Guid.NewGuid();
+            obj.CreateDate = DateTime.Now;
+            obj.ModifiedDate = DateTime.Now;
+            obj.IsDeleted = false;
+
             var result = await Entities.AddAsync(obj);
             await _context.SaveChangesAsync();
 
             return result.Entity;
         }
 
-        public async Task<Entity> DeleteAsync(Entity obj)
+        public async Task<Entity> DeleteAsync(object id)
         {
-            var result = Entities.Remove(obj);
-            result.Entity.ModifiedDate = DateTime.Now;
-            result.Entity.IsDeleted = true;
+            var result = await Entities.FindAsync(id);
+            result.ModifiedDate = DateTime.Now;
+            result.IsDeleted = true;
             await _context.SaveChangesAsync();
 
-            return result.Entity;
+            return result;
         }
 
         public async Task<Entity> UpdateAsync(Entity obj)

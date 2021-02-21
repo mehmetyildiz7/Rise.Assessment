@@ -11,6 +11,6 @@ namespace Rise.Assessment.Database.Repositories.Base
         Task<TEntity> Add(TEntity obj);
         Task<IEnumerable<TEntity>> GetAll();
         Task<TEntity> UpdateAsync(TEntity obj);
-        Task<TEntity> DeleteAsync(TEntity obj);
+        Task<TEntity> DeleteAsync(object id);
     }
 }
