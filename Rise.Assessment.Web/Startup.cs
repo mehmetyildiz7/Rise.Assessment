@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rise.Assessment.Common.Filters;
 using Rise.Assessment.Database;
 using Rise.Assessment.Log4netDatabase;
 
@@ -25,7 +26,10 @@ namespace Rise.Assessment.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(config =>
+            {
+                config.Filters.Add(new ErrorHandlingFilter());
+            });
             services.AddDbContext<RiseDbContext>();
             services.AddDbContext<Log4netContext>();
         }

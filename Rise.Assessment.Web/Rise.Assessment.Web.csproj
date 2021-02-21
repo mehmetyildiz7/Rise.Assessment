@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Rise.Assessment.Common\Rise.Assessment.Common.csproj" />
     <ProjectReference Include="..\Rise.Assessment.Database\Rise.Assessment.Database.csproj" />
     <ProjectReference Include="..\Rise.Assessment.Log4netDatabase\Rise.Assessment.Log4netDatabase.csproj" />
   </ItemGroup>
