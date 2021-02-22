@@ -14,4 +14,8 @@
     <Folder Include="Configurations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rise.Assessment.Common\Rise.Assessment.Common.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -10,6 +10,6 @@ namespace Rise.Assessment.Database.Entities
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Company { get; set; }
-        public List<ContactInfo> ContactInfo { get; set; }
+        public virtual List<ContactInfo> ContactInfo { get; set; }
     }
 }

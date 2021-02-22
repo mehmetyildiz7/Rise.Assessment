@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using log4net;
+using Microsoft.EntityFrameworkCore;
+using Rise.Assessment.Common.Filters;
 using Rise.Assessment.Database.Entities.Base;
 using System;
 using System.Collections.Generic;
@@ -9,6 +11,8 @@ namespace Rise.Assessment.Database.Repositories.Base
 {
     public class BaseRepository<Entity> : IBaseRepository<Entity> where Entity : BaseEntity
     {
+        private static readonly ILog log = LogManager.GetLogger(typeof(BaseRepository<Entity>));
+
         protected DbSet<Entity> Entities;
         private bool disposedValue;
         private RiseDbContext _context;
@@ -20,12 +24,15 @@ namespace Rise.Assessment.Database.Repositories.Base
         public async Task<Entity> Get(object id)
         {
             var result = await Entities.FindAsync(id);
+            log.Info($"Entity with ID = {id} returned from table = {typeof(Entity).Name}");
+
             return result;
         }
 
         public async Task<IEnumerable<Entity>> GetAll()
         {
             var result = Entities.Where(x => x.IsDeleted == false);
+            log.Info($"All entities returned from table = {typeof(Entity).Name}");
 
             return await result.ToListAsync();
         }
@@ -39,6 +46,7 @@ namespace Rise.Assessment.Database.Repositories.Base
 
             var result = await Entities.AddAsync(obj);
             await _context.SaveChangesAsync();
+            log.Info($"Entity with ID = {obj.Id} added to table = {typeof(Entity).Name}");
 
             return result.Entity;
         }
@@ -49,6 +57,7 @@ namespace Rise.Assessment.Database.Repositories.Base
             result.ModifiedDate = DateTime.Now;
             result.IsDeleted = true;
             await _context.SaveChangesAsync();
+            log.Info($"Entity with ID = {id} deleted from table = {typeof(Entity).Name}");
 
             return result;
         }
@@ -58,6 +67,7 @@ namespace Rise.Assessment.Database.Repositories.Base
             var result = Entities.Update(obj);
             result.Entity.ModifiedDate = DateTime.Now;
             await _context.SaveChangesAsync();
+            log.Info($"Entity with ID = {obj.Id} updated in table = {typeof(Entity).Name}");
 
             return result.Entity;
         }

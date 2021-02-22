@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Rise.Assessment.Database.Entities.Base
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         [Key]
         public Guid Id { get; set; }

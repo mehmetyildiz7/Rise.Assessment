@@ -11,7 +11,7 @@ namespace Rise.Assessment.Common.Filters
         {
             var exception = context.Exception;
             log.Fatal(exception.Message, exception);
-            context.ExceptionHandled = true;
+            context.ExceptionHandled = false;
         }
     }
 }

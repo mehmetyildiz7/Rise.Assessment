@@ -1,10 +1,9 @@
 ﻿using Rise.Assessment.Common.Enums;
-using Rise.Assessment.Database.Entities.Base;
 
-namespace Rise.Assessment.Database.Entities
+namespace Rise.Assessment.Common.Models
 {
 
-    public class ContactInfo : BaseEntity
+    public class ContactInfoModel
     {
         public string Content { get; set; }
         public ContactType Type { get; set; }

@@ -1,11 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Rise.Assessment.Common\Rise.Assessment.Common.csproj" />
+    <ProjectReference Include="..\Rise.Assessment.Database\Rise.Assessment.Database.csproj" />
   </ItemGroup>
 
 </Project>
